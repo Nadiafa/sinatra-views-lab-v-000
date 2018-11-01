@@ -5,6 +5,7 @@
   </head>
   <body>
     <h1>Today</h1>
-    <p><%= "The date is" + DateTime.parse(%A, %B, %d, %Y)  %></p>
+    <% current_date = DateTime.parse(%A, %B, %d, %Y) %>
+    <p><%= "The date is" + "#{current_date}" %></p>
   </body>
 </html>
