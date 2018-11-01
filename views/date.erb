@@ -5,9 +5,8 @@
   </head>
   <body>
     <h1>Today</h1>
-    <% current_date = DateTime.parse(%A, %B, %d, %Y) %>
-    <p><%= "The date is" + "#{current_date}" %></p>
-     <% name = "Joe"%>
-    <h1><%= "Goodbye" + " #{name}" %></h1>
+    <!--<% current_date = DateTime.parse(%A, %B, %d, %Y) %>-->
+    <% current_date = DateTime.now %>
+    <p><%= "The date is" + " #{current_date}" %></p>
   </body>
 </html>
