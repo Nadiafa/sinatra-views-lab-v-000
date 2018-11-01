@@ -5,7 +5,7 @@
   </head>
   <body>
     <h1>Today</h1>
-    <% current_date = DateTime.strftime(%A)  %>
+    <% current_date = Date.today.strftime("%A, %B %d, %Y")  %>
     <p><%= "The date is" + " #{current_date}" %></p>
   </body>
 </html>
